@@ -12,10 +12,10 @@ out/arch/arm64/boot/..
 You will get wlan.ko in
 out/drivers/staging/prima/..
 
-To Get Pronto_Wlan.ko
+To Get Pronto_wlan.ko
 aarch64-linux-gnu-strip --strip-unneeded --strip-debug out/drivers/staging/prima/wlan.ko && cp -rf out/drivers/staging/prima/wlan.ko out/drivers/staging/prima/pronto_wlan.ko
 
-You will get  pronto_Wlan.ko
+You will get  pronto_wlan.ko
 out/drivers/staging/prima/..
 
 Flash kerenl using anykernel and replace pronto_Wlan.ko in vendor/lib/module/pronto_wlan.ko
