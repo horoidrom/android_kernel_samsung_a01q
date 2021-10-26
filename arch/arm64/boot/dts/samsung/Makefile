@@ -75,14 +75,14 @@ samsung-sdm450-qrd-r09-overlay.dtbo-base := sdm450.dtb \
 # HS70 code added by tangqingyong for HS70-11 at 20191003 end
 # HS70 code added by tangqingyong for HS70-9 at 20191002 end
 else
-dtb-$(CONFIG_ARCH_MSM8937) += msm8937-pmi8950-mtp.dtb \
+#dtb-$(CONFIG_ARCH_MSM8937) += msm8937-pmi8950-mtp.dtb \
 	msm8937-interposer-sdm439-cdp.dtb \
 	msm8937-interposer-sdm439-mtp.dtb \
 	msm8937-interposer-sdm439-qrd.dtb \
 	msm8937-interposer-sdm429-cdp.dtb \
 	msm8937-interposer-sdm429-mtp.dtb
 
-dtb-$(CONFIG_ARCH_SDM439) += sdm439-mtp.dtb \
+#dtb-$(CONFIG_ARCH_SDM439) += sdm439-mtp.dtb \
 	sdm439-cdp.dtb \
 	sdm439-qrd.dtb \
 	sda439-mtp.dtb \
@@ -92,7 +92,7 @@ dtb-$(CONFIG_ARCH_SDM439) += sdm439-mtp.dtb \
 	qm215-qrd.dtb \
 	qm215-qrd-smb1360.dtb
 
-dtb-$(CONFIG_ARCH_SDM429) += sdm429-mtp.dtb \
+#dtb-$(CONFIG_ARCH_SDM429) += sdm429-mtp.dtb \
 	sdm429-cdp.dtb \
 	sdm429-qrd.dtb \
 	sda429-mtp.dtb \
