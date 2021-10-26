@@ -7015,4 +7015,3 @@ int msm_comm_release_mark_data(struct msm_vidc_inst *inst)
 
 	return 0;
 }
-
