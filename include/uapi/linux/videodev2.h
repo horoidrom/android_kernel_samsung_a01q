@@ -1889,6 +1889,7 @@ struct v4l2_enc_idx {
 #define V4L2_ENC_CMD_STOP       (1)
 #define V4L2_ENC_CMD_PAUSE      (2)
 #define V4L2_ENC_CMD_RESUME     (3)
+#define V4L2_ENC_QCOM_CMD_FLUSH  (4)
 
 /* Flags for V4L2_ENC_CMD_STOP */
 #define V4L2_ENC_CMD_STOP_AT_GOP_END    (1 << 0)
@@ -1909,8 +1910,9 @@ struct v4l2_encoder_cmd {
 #define V4L2_DEC_CMD_PAUSE       (2)
 #define V4L2_DEC_CMD_RESUME      (3)
 #define V4L2_QCOM_CMD_FLUSH      (4)
-#define V4L2_DEC_QCOM_CMD_RECONFIG_HINT  (5)
-#define V4L2_QCOM_CMD_SESSION_CONTINUE (6)
+#define V4L2_DEC_QCOM_CMD_FLUSH  (5)
+#define V4L2_DEC_QCOM_CMD_RECONFIG_HINT  (6)
+#define V4L2_QCOM_CMD_SESSION_CONTINUE (7)
 /* Flags for V4L2_DEC_CMD_START */
 #define V4L2_DEC_CMD_START_MUTE_AUDIO	(1 << 0)
 
@@ -1920,6 +1922,13 @@ struct v4l2_encoder_cmd {
 /* Flags for V4L2_DEC_CMD_STOP */
 #define V4L2_DEC_CMD_STOP_TO_BLACK	(1 << 0)
 #define V4L2_DEC_CMD_STOP_IMMEDIATELY	(1 << 1)
+
+#define V4L2_QCOM_CMD_FLUSH_OUTPUT  (1 << 0)
+#define V4L2_QCOM_CMD_FLUSH_CAPTURE (1 << 1)
+
+/* Flags for V4L2_DEC_QCOM_CMD_FLUSH */
+#define V4L2_DEC_QCOM_CMD_FLUSH_OUTPUT  (1 << 0)
+#define V4L2_DEC_QCOM_CMD_FLUSH_CAPTURE (1 << 1)
 
 #define V4L2_QCOM_CMD_FLUSH_OUTPUT  (1 << 0)
 #define V4L2_QCOM_CMD_FLUSH_CAPTURE (1 << 1)
